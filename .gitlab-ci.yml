@@ -1,0 +1,9 @@
+build-master:
+  stage: build
+  script:
+    - make dbuild-cryptos-accore-noarch
+    - make dbuild-cryptos-accore-x8664
+    - make dbuild-cryptos-accore-armhf
+    - make dbuild-cryptos-accore-aarch64
+  only:
+    - master
