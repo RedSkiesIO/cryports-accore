@@ -19,7 +19,6 @@ build() {
     cd "$builddir"
 }
 
-# package() {
-#     install -D -m755 "$srcdir"/acinstaller "$pkgdir"/etc/init.d/acinstaller
-#     install -D -m755 "$srcdir"/setup-cryptos-answerfile "$pkgdir"/tmp/setup-cryptos-answerfile
-# }
+package() {
+
+}
