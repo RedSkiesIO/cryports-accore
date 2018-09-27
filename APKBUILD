@@ -20,5 +20,5 @@ build() {
 }
 
 package() {
-
+    echo $srcdir;
 }
