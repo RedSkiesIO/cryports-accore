@@ -26,6 +26,7 @@ build() {
 }
 
 package() {
+    mkdir -p "$pkgdir";
     cd /home/builder/cryptos/src/src/us;
     sudo make cryptos-install;
 }
