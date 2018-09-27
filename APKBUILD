@@ -26,5 +26,5 @@ build() {
 
 package() {
     cd /home/builder/cryptos/src/src/us;
-    make cryptos-install;
+    sudo make cryptos-install;
 }
