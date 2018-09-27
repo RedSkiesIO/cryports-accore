@@ -16,11 +16,11 @@ source="http://10.84.172.118/atlas/us/-/archive/master/us-master.tar.gz"
 builddir="$srcdir/us-master"
 
 build() {
-    pwd;
-    echo $srcdir;
-    cd 'us-master';
-    pwd;
-    ls -la;
+    cd /home/builder/cryptos/src/src/us-master;
+    ./bin/install_fcgi;
+    ./bin/install_jsoncpp;
+    ./bin/install_libsecp256k1;
+    make cryptos-debug;
 }
 
 package() {
