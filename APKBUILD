@@ -25,5 +25,6 @@ build() {
 }
 
 package() {
-    echo $srcdir;
+    cd /home/builder/cryptos/src/src/us;
+    make cryptos-install;
 }
