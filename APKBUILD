@@ -13,8 +13,13 @@ install=""
 subpackages=""
 replaces=""
 source="http://10.84.172.118/atlas/us/-/archive/master/us-master.tar.gz"
+builddir="$srcdir/us-master"
 
-package() {
-    install -D -m755 "$srcdir"/acinstaller "$pkgdir"/etc/init.d/acinstaller
-    install -D -m755 "$srcdir"/setup-cryptos-answerfile "$pkgdir"/tmp/setup-cryptos-answerfile
+build() {
+    cd "$builddir"
 }
+
+# package() {
+#     install -D -m755 "$srcdir"/acinstaller "$pkgdir"/etc/init.d/acinstaller
+#     install -D -m755 "$srcdir"/setup-cryptos-answerfile "$pkgdir"/tmp/setup-cryptos-answerfile
+# }
