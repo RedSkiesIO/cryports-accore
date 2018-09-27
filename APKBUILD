@@ -16,7 +16,8 @@ source="http://10.84.172.118/atlas/us/-/archive/master/us-master.tar.gz"
 builddir="$srcdir/us-master"
 
 build() {
-    cd "$builddir"
+    cd src/us-master;
+    ls -la;
 }
 
 package() {
