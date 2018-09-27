@@ -16,7 +16,8 @@ source="http://10.84.172.118/atlas/us/-/archive/master/us-master.tar.gz"
 builddir="$srcdir/us-master"
 
 build() {
-    cd /home/builder/cryptos/src/src/us-master;
+    mv /home/builder/cryptos/src/src/us-master /home/builder/cryptos/src/src/us;
+    cd /home/builder/cryptos/src/src/us;
     sudo ./bin/install_fcgi;
     sudo ./bin/install_jsoncpp;
     sudo ./bin/install_libsecp256k1;
