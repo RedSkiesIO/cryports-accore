@@ -1,7 +1,13 @@
-build-master:
+build-x8664:
   stage: build
   script:
     - make dbuild-cryptos-accore-x8664
+  only:
+    - release/x8664
+
+build-armhf:
+  stage: build
+  script:
     - make dbuild-cryptos-accore-armhf
   only:
-    - master
+    - release/armhf
