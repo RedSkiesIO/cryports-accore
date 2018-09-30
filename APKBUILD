@@ -34,11 +34,14 @@ package() {
     mkdir -p "$pkgdir"/usr/local/include;
 
 	install -d "$builddir" "$pkgdir"/etc/accore;
-	install -Dm644 "$builddir/gov/libusgov.so"  "$pkgdir"/usr/local/lib/libusgov.so;
-	install -Dm644 "$builddir/wallet/libuswallet.so" "$pkgdir"/usr/local/lib/libuswallet.so;
-	install -Dm644 "$builddir/govx/us-gov" "$pkgdir"/usr/local/bin/us-gov;
-	install -Dm644 "$builddir/walletx/us-wallet" "$pkgdir"/usr/local/bin/us-wallet;
-	install -Dm644 "$builddir/cryptos/etc/init.d/us-wallet" "$pkgdir"/etc/init.d/us-wallet;
-	install -Dm644 "$builddir/cryptos/etc/init.d/us-gov" "$pkgdir"/etc/init.d/us-gov;
+    install -Dm644 "$builddir"/usr/local/lib64/libfastcgipp.so.3.0 "$pkgdir"/usr/local/lib64/libfastcgipp.so.3.0
+    install -Dm644 "$builddir"/usr/local/lib64/libfastcgipp.so.3 "$pkgdir"/usr/local/lib64/libfastcgipp.so.3
+    install -Dm644 "$builddir"/usr/local/lib64/libfastcgipp.so "$pkgdir"/usr/local/lib64/libfastcgipp.so
+	install -Dm644 "$builddir"/gov/libusgov.so  "$pkgdir"/usr/local/lib/libusgov.so;
+	install -Dm644 "$builddir"/wallet/libuswallet.so "$pkgdir"/usr/local/lib/libuswallet.so;
+	install -Dm644 "$builddir"/govx/us-gov "$pkgdir"/usr/local/bin/us-gov;
+	install -Dm644 "$builddir"/walletx/us-wallet "$pkgdir"/usr/local/bin/us-wallet;
+	install -Dm644 "$builddir"/cryptos/etc/init.d/us-wallet "$pkgdir"/etc/init.d/us-wallet;
+	install -Dm644 "$builddir"/cryptos/etc/init.d/us-gov "$pkgdir"/etc/init.d/us-gov;
 	install -d "/usr/local/include/fastcgi++" "$pkgdir""/usr/local/include/fastcgi++";
 }
