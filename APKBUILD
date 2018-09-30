@@ -40,7 +40,6 @@ package() {
     install -Dm644 "$builddir"/walletx/us-wallet "$pkgdir"/usr/local/bin/us-wallet;
     install -Dm644 "$builddir"/cryptos/etc/init.d/us-wallet "$pkgdir"/etc/init.d/us-wallet;
     install -Dm644 "$builddir"/cryptos/etc/init.d/us-gov "$pkgdir"/etc/init.d/us-gov;
-    sudo cp -Rf "/usr/local/include/fastcgi++" "$pkgdir""/usr/local/include/fastcgi++";
     install -Dm644 "/usr/local/lib64/libfastcgipp.so.3.0" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3.0;
     install -Dm644 "/usr/local/lib64/libfastcgipp.so.3" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3;
     install -Dm644 "/usr/local/lib64/libfastcgipp.so" "$pkgdir"/usr/local/lib64/libfastcgipp.so;
@@ -59,6 +58,6 @@ package() {
     install -Dm644 "/usr/local/include/json/value.h" "$pkgdir"/usr/local/include/json/value.h;
     install -Dm644 "/usr/local/include/json/version.h" "$pkgdir"/usr/local/include/json/version.h;
     install -Dm644 "/usr/local/include/json/writer.h" "$pkgdir"/usr/local/include/json/writer.h;
-
-    sudo cp -Rf "$builddir"/* "$pkgdir"/etc/accore;
+    sudo mv /usr/local/include/fastcgi++/* "$pkgdir""/usr/local/include/fastcgi++";
+    sudo mv "$builddir"/* "$pkgdir"/etc/accore;
 }
