@@ -41,7 +41,22 @@ package() {
 	install -Dm644 "$builddir"/cryptos/etc/init.d/us-wallet "$pkgdir"/etc/init.d/us-wallet;
 	install -Dm644 "$builddir"/cryptos/etc/init.d/us-gov "$pkgdir"/etc/init.d/us-gov;
 	install -d "/usr/local/include/fastcgi++" "$pkgdir""/usr/local/include/fastcgi++";
-    install -Dm644 "/usr/local/lib64/libfastcgipp.so.3.0" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3.0
-    install -Dm644 "/usr/local/lib64/libfastcgipp.so.3" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3
-    install -Dm644 "/usr/local/lib64/libfastcgipp.so" "$pkgdir"/usr/local/lib64/libfastcgipp.so
+    install -Dm644 "/usr/local/lib64/libfastcgipp.so.3.0" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3.0;
+    install -Dm644 "/usr/local/lib64/libfastcgipp.so.3" "$pkgdir"/usr/local/lib64/libfastcgipp.so.3;
+    install -Dm644 "/usr/local/lib64/libfastcgipp.so" "$pkgdir"/usr/local/lib64/libfastcgipp.so;
+    install -Dm644 "/usr/local/lib64/pkgconfig/jsoncpp.pc" "$pkgdir"/usr/local/lib64/pkgconfig/jsoncpp.pc;
+    install -Dm644 "/usr/local/lib64/libjsoncpp.so.1.8.4" "$pkgdir"/usr/local/lib64/libjsoncpp.so.1.8.4;
+    install -Dm644 "/usr/local/lib64/libjsoncpp.so.19" "$pkgdir"/usr/local/lib64/libjsoncpp.so.19;
+    install -Dm644 "/usr/local/lib64/libjsoncpp.so" "$pkgdir"/usr/local/lib64/libjsoncpp.so;
+    install -Dm644 "/usr/local/include/json/allocator.h" "$pkgdir"/usr/local/include/json/allocator.h;
+    install -Dm644 "/usr/local/include/json/assertions.h" "$pkgdir"/usr/local/include/json/assertions.h;
+    install -Dm644 "/usr/local/include/json/autolink.h" "$pkgdir"/usr/local/include/json/autolink.h;
+    install -Dm644 "/usr/local/include/json/config.h" "$pkgdir"/usr/local/include/json/config.h;
+    install -Dm644 "/usr/local/include/json/features.h" "$pkgdir"/usr/local/include/json/features.h;
+    install -Dm644 "/usr/local/include/json/forwards.h" "$pkgdir"/usr/local/include/json/forwards.h;
+    install -Dm644 "/usr/local/include/json/json.h" "$pkgdir"/usr/local/include/json/json.h;
+    install -Dm644 "/usr/local/include/json/reader.h" "$pkgdir"/usr/local/include/json/reader.h;
+    install -Dm644 "/usr/local/include/json/value.h" "$pkgdir"/usr/local/include/json/value.h;
+    install -Dm644 "/usr/local/include/json/version.h" "$pkgdir"/usr/local/include/json/version.h;
+    install -Dm644 "/usr/local/include/json/writer.h" "$pkgdir"/usr/local/include/json/writer.h;
 }
