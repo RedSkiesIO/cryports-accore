@@ -35,5 +35,5 @@ package() {
 	install -Dm644 "$builddir/walletx/us-wallet" "$pkgdir"/usr/local/bin;
 	install -Dm644 "$builddir/cryptos/etc/init.d/us-wallet" "$pkgdir"/etc/init.d/;
 	install -Dm644 "$builddir/cryptos/etc/init.d/us-gov" "$pkgdir"/etc/init.d/;
-	install -d /usr/local/include/fastcgi\+\+/ "$pkgdir"/usr/local/include/fastcgi\+\+/;
+	install -d "/usr/local/include/fastcgi\+\+/" "$pkgdir""/usr/local/include/fastcgi\+\+/";
 }
