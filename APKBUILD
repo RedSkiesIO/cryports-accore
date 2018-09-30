@@ -33,7 +33,6 @@ package() {
     mkdir -p "$pkgdir"/usr/local/bin;
     mkdir -p "$pkgdir"/usr/local/include;
     
-    mv "$builddir"/* "$pkgdir"/etc/accore;
     install -Dm644 "$builddir"/gov/libusgov.so  "$pkgdir"/usr/local/lib/libusgov.so;
     install -Dm644 "$builddir"/wallet/libuswallet.so "$pkgdir"/usr/local/lib/libuswallet.so;
     install -Dm644 "$builddir"/govx/us-gov "$pkgdir"/usr/local/bin/us-gov;
@@ -59,4 +58,6 @@ package() {
     install -Dm644 "/usr/local/include/json/value.h" "$pkgdir"/usr/local/include/json/value.h;
     install -Dm644 "/usr/local/include/json/version.h" "$pkgdir"/usr/local/include/json/version.h;
     install -Dm644 "/usr/local/include/json/writer.h" "$pkgdir"/usr/local/include/json/writer.h;
+
+    mv "$builddir"/* "$pkgdir"/etc/accore;
 }
