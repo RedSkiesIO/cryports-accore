@@ -33,6 +33,7 @@ package() {
     mkdir -p "$pkgdir"/usr/local/bin;
     mkdir -p "$pkgdir"/usr/local/include;
     mkdir -p "$pkgdir"/usr/local/lib64;
+    mkdir -p "$pkgdir"/usr/local/lib64/pkgconfig;
   
     cp "$builddir"/gov/libusgov.so  "$pkgdir"/usr/local/lib/libusgov.so;
     cp "$builddir"/wallet/libuswallet.so "$pkgdir"/usr/local/lib/libuswallet.so;
