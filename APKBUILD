@@ -32,6 +32,8 @@ package() {
     mkdir -p "$pkgdir"/usr/local/lib;
     mkdir -p "$pkgdir"/usr/local/bin;
     mkdir -p "$pkgdir"/usr/local/include;
+    mkdir -p "$pkgdir"/usr/local/include/json;
+    mkdir -p "$pkgdir"/usr/local/include/fastcgi++;
     mkdir -p "$pkgdir"/usr/local/lib64;
     mkdir -p "$pkgdir"/usr/local/lib64/pkgconfig;
   
